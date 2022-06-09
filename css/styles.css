@@ -2,33 +2,58 @@
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('href="https://use.typekit.net/tur0zli.css');
 
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 	color: #202030;
-	background-color: #f8f8fc;
+	background-color: #F6E6DE;
+}
+
+/* Typography */
+
+h1 {
+	color: #6D1436;
+	font-family: 'Proxima Nova', 'Proxima Nova Black', 'Proxima Nova Bold', 'Proxima Nova Cond';
+}
+
+h2 {
+	font: bold;
+	color: #6D1436;
+}
+
+a:link {
+color: black;
+text-decoration: none;
+}
+
+a:visited {
+color: #6D1436;
+}
+
+a:hover {
+color: #6D1436;
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
-
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: #FFFFFF;
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: #FFFFFF;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #FFFFFF;
 }
 
 /* Styles for lists in the document */
-
 .biography-details li::before, .skill-list li::before {
-	content: ">";
+	content: "*";
+	color: #6D1436;
 	font-weight: 800;
 	display: inline-block;
 	width: 1em;
@@ -36,11 +61,27 @@ body {
 }
 
 .biography-details li::before {
-	color: #EE7623;
+	color: #6D1436;
 }
 
 .biography-details li, .skill-list li {
 	padding-left: 1em;
+}
+
+/* Tag line */
+
+.tagline{
+	text-align: center;
+}
+
+/* Language skills */
+.language-progress {
+	background-color: #F6E6DE !important;
+	color: #202030; 
+}
+
+.border-2 {
+	border: none !important;
 }
 
 /* Styles for contact icons */
@@ -48,4 +89,13 @@ body {
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
+}
+
+.fw-bolder {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.text-end {
+	color: #6D1436;
 }
